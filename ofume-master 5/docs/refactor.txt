@@ -1,0 +1,38 @@
+List of Refactorings
+====================
+
+Name/Banner# of Developer 1: Taylor MacIntyre / B00752864
+Name/Banner# of Developer 2: Lynda Ofume / B00738568
+
+Refactorings:
+=============
+
+0. EXAMPLE:  
+   File: SpressoBot.java, ChickenBot.java, AngryBot.java, TimBot.java
+   Location (method/approx. line #): getNextMove()
+   Issue Identified: Common code to check if move will result in 
+                    energy use and decrement energyLevel if that 
+                    is the case
+   Description of fix:  Push the common code into TimBot.java, creating a
+                        protected method to be used instead.
+   Implemented: Yes (Completely, all tests pass)
+
+1. File: bullyBot.java, timBot.java 
+   Location (method/approx. line #): fireCannon()
+   Issue Identified: Common method fireCannon() in both classes
+   Description of fix: create a protected method in timBot.java to house the code from bullyBot 
+   Implemented: No
+
+2. File: timBot.java, district.java
+   Location (method/approx. line #): senseDistrict()
+   Issue Identified: Method senseDistrict() common to both class timBot.java and district.java class, single 			     responsibility principle
+   Description of fix: make senseDistrict() in district.java a void reference to timBot.java senseDistrict()
+   Implemented: Yes (all tests pass)
+
+3. File: timBot.java
+   Location (method/approx. line #): useMoveEnergy(), useJolt()
+   Issue Identified: Duplicate decrement energyLevel code in both useMoveEnergy() and useJolt()
+   Description of fix: replace duplicate code in useMoveEnergy() and replace it with reference to useJolt()
+   Implemented: Yes (all tests pass)
+
+
