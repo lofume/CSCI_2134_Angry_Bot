@@ -1,0 +1,41 @@
+List of Refactorings
+====================
+
+Name/Banner# of Developer 1: Lynda Ofume / B00738568
+Name/Banner# of Developer 2: Taylor MacIntyre / B00752864
+
+Refactorings:
+=============
+
+0. EXAMPLE:  
+   File: AngryBot.java
+   Location (method/approx. line #): getNextMove(), line 54
+   Issue Identified: Magic number
+   Description of fix:  Replaced with constant EMPTY_DISTRICT_PENALTY
+
+1. File: District.java
+   Location (method/approx. line #): Constructor, Line 33
+   Issue Identified: Name of constructor is unclear and vague- data level refactoring 
+   Description of fix: Change to NUM_INVADERS_MOVE_PHASE
+
+2. File: District.java
+   Location (method/approx. line #): attributes, line 30
+   Issue Identified: data-level refractoring, unclear variable name
+   Description of fix: change spressobot to SPRESS_BOT_COUNT
+
+3. File: DohNat.java
+   Location (method/approx. line #): District getDistrict( int x, int y ), Line 163
+   Issue Identified: statement level; simplify code
+   Description of fix: change x+width to HORIZONTAL_OVERFLOW
+
+4. File: DohNat.java
+   Location (method/approx. line #): District getDistrict( int x, int y ), Line 164
+   Issue Identified: statement level; simplify code
+   Description of fix: change y+height to VERTICAL_OVERFLOW
+
+5. File: DohNat.java
+   Location (method/approx. line #): toString(), Line 182-195
+   Issue Identified: Routine level - simplify the code 
+   Description of fix: switched the occurrence of += a value to using the append function
+
+
