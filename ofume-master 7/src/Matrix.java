@@ -4,7 +4,7 @@
  *  Date: October 31, 2019
  *  Purpose: CSCI 2134, Lab 8
  *
- *  Description: This class implements Matrix objects for manipulating matrices..
+ *  Description: This class implements Matrix objects for manipulating matrices.
  */
 
 import java.lang.IndexOutOfBoundsException;
