@@ -1,0 +1,38 @@
+List of Refactorings
+====================
+
+Name/Banner# of Developer: Lynda Ofume / B00738568
+
+Refactorings:
+=============
+
+
+1. File: Timbot.java, District.java
+   Location (method/approx. line #): senseDistrict()
+   Issue Identified: Method is also found in the Timbot class
+   Description of fix: Refractor the code, by putting the senseDistrict() method into the 
+	in the Timbot class
+   Implemented: yes! (all tests pass)
+
+
+2. File: District.java, Timbot.java, AngryBot.java, BullyBot.java, ChickenBot.java, 		SpressoBot.java
+   Location (method/approx. line #): parameter declaration, line 22
+   Issue Identified: use of current, but is not clear on what the parameter is for
+   Description of fix: switch CURRENT to CURRENT_DISTRICT in all classes
+   Implemented: yes! (all tests pass)
+
+
+3. File: BullyBot.java
+   Location (method/approx. line #): fireCannon()
+   Issue Identified: Statement in line 69 always amounts to true, simplify statement
+   Description of fix:  changing the  "i != District.CURRENT_DISTRICT " statement to be 	"true". Remove statement since it is repetitive code
+   Implemented: yes! (all tests pass)
+
+
+4. File: DohNat.java
+   Location (method/approx. line #): toString()
+   Issue Identified: improper use of += to concatenate 
+   Description of fix: switching concatenation of "+=" to "append" function
+   Implemented: yes! (all tests pass)
+
+
