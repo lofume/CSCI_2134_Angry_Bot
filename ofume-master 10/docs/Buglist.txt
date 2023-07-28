@@ -1,0 +1,40 @@
+List of Bugs
+====================
+
+Name/Banner# of Developer: Lynda Ofume / B00738568
+
+Bugs:
+=============
+
+1. File: AngryBotTest.java
+   Location (method/approx. line #): getNextMoveCase1a(), line 40
+   Issue Identified: Statement needs result of false, when statement is true
+   Description of fix: change the test to be an assertTrue statement, by changing line in 
+	AngryBot.java
+
+2. File: AngryBot.java
+   Location (method/approx. line #): getNextMove(), line 48
+   Issue Identified: Logic error with get move method
+   Description of fix: fixing the boundaries of certain lines of code
+
+3. File: BullyBot.java
+   Location (method/approx. line #): fireCannon(), line 66-67
+   Issue Identified: end count values were wrongly incremented
+   Description of fix: fixed the end count from negative to positive
+
+4. File: SpressoBot.java
+   Location (method/approx. line #): getNextMove(), line 72-76
+   Issue Identified: logic error in respect to the equality   
+   Description of fix: Needed to test if move is != to District.CURRENT
+
+5. File: Timbot.java
+   Location (method/approx. line #): harvestSpresso(), line 153-158
+   Issue Identified: logic error in respect to sign used, should be energyLevel < 99
+   Description of fix: change sign to greater than
+
+6. File: AngryBot.java
+   Location (method/approx. line #): getNextMove(), line 58-59
+   Issue Identified: Unnecessary code in line, causing faulty code
+   Description of fix: Comment out code in code block to remove error
+
+
