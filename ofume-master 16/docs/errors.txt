@@ -1,0 +1,55 @@
+Bug Report
+==========
+
+For each bug, please provide the following information:
+  - Class name
+  - Method name
+  - Test method name
+  - Message produced by the test method
+
+Example:
+Error 0:
+  Class: District
+  Method: setTimBot()
+  Test Method: setTimBot_districtNotEmpty()
+  Message: setTimBot() on non-empty district returned true
+
+Error 1:
+  Class: Bullybot.java
+  Method: fireCannon
+  Test Method: assertTrue(fire!=null)
+  Message: org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+
+Error 2:
+  Class: SpressoBot.java
+  Method: getNextMethod
+  Test Method:  assertTrue(scores==null);
+  Message: org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+
+Error 3:
+  Class: TimBot.java
+  Method: senseDistricts
+  Test Method: System.arraycopy( spresso, 0, 4, 0, spresso.length );
+  Message: org.junit.jupiter.api.extension.ParameterResolutionException: No ParameterResolver registered for parameter [int[] arg0] in method [void TimBotTest.senseDistricts(int[],boolean[])].
+
+Error 4:
+  Class: TimBot.java
+  Method: harvestSpresso(int jolts)
+  Test Method: if( energyLevel < 99 ) {
+            energyLevel = 99;
+        }
+        System.out.print(energyLevel);
+  Message: org.junit.jupiter.api.extension.ParameterResolutionException: No ParameterResolver registered for parameter [int arg0] in method [void TimBotTest.harvestSpresso(int)].
+
+Error 5:
+  Class: 
+  Method:
+  Test Method:
+  Message:
+
+
+
+
+
+
+*********** ADD AS MANY MORE AS NEEDED *******************
